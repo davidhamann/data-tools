@@ -1,6 +1,6 @@
 library(xlsx)
-this.dir <- dirname(parent.frame(2)$ofile)
-setwd(this.dir)
+wd <- dirname(parent.frame(2)$ofile)
+setwd(wd)
 
 sheet <- read.xlsx("excel_data.xlsx",1, header = FALSE)
 sheet
